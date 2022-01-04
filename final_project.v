@@ -233,7 +233,225 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
 						tmp_g <= 4'h0;
 					end
             ////////////////////////////////////////////////////////////////////////////////////// END SECTION 4
-            
+            else if (counter_y >= 110 && counter_y < 146)
+                begin
+                    tmp_r <= 4'h0;    // black
+                    tmp_b <= 4'h0;
+                    tmp_g <= 4'h0;
+                end
+            ///////////////////////////////////////////////////////////////////////////////////// 789 SECTION
+            else if (counter_y >= 146 && counter_y < 151)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 151 && counter_y < 201)
+                begin
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 201 && counter_y < 206)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            ///////////////////////////////////////////////////////////////////////////////////// 456 SECTION
+            else if (counter_y >= 206 && counter_y < 230)
+                begin
+                    tmp_r <= 4'h0;    // black(0)
+                    tmp_b <= 4'h0;
+                    tmp_g <= 4'h0;
+                end
+            else if (counter_y >= 230 && counter_y < 235)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 235 && counter_y < 285)
+                begin
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 285 && counter_y < 290)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            ////////////////////////////////////////////////////////////////////////////////////// 123 SECTION
+            else if (counter_y >= 290 && counter_y < 314)
+                begin
+                    tmp_r <= 4'h0;    // black(0)
+                    tmp_b <= 4'h0;
+                    tmp_g <= 4'h0;
+                end
+            else if (counter_y >= 314 && counter_y < 319)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 319 && counter_y < 369)
+                begin
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 369 && counter_y < 374)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            ////////////////////////////////////////////////////////////////////////////////////// 0 SECTION
+            else if (counter_y >= 374 && counter_y < 398)
+                begin
+                    tmp_r <= 4'h0;    // black(0)
+                    tmp_b <= 4'h0;
+                    tmp_g <= 4'h0;
+                end
+            else if (counter_y >= 398 && counter_y < 403)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 403 && counter_y < 453)
+                begin
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            else if (counter_y >= 453 && counter_y < 458)
+                begin
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ))
+                        begin
+                            tmp_r <= 4'hF;    // white(1)
+                            tmp_b <= 4'hF;
+                            tmp_g <= 4'hF;
+                        end
+                    else 
+                        begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                        end
+                end
+            //////////////////////////////////////////////////////////////////////////////////////
+            else
+                begin
+                            tmp_r <= 4'h0;    // black(0)
+                            tmp_b <= 4'h0;
+                            tmp_g <= 4'h0;
+                end
             ////////////////////////////////////////////////////////////////////////////////////// SECTION 5
         //     else if (counter_y >= 305 && counter_y < 310)
         //         begin
