@@ -242,7 +242,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
             ///////////////////////////////////////////////////////////////////////////////////// 789 SECTION
             else if (counter_y >= 146 && counter_y < 151)
                 begin
-                    if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 )
+								|| (counter_x >= 579 && counter_x < 629))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -257,8 +258,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 151 && counter_y < 201)
                 begin
-                    if((counter_x >= 310 && counter_x < 315) || (counter_x >= 365 && counter_x < 370) || (counter_x >=408 && counter_x < 413) || (counter_x >= 463 && counter_x < 468)
-                        || (counter_x >= 506 && counter_x < 511) || (counter_x >= 561 && counter_x < 566))
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536) || (counter_x >= 574 && counter_x < 579) || (counter_x >= 629 && counter_x < 634))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -273,7 +274,7 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 201 && counter_y < 206)
                 begin
-                    if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ) || (counter_x >= 579 && counter_x < 629 ))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -295,7 +296,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 230 && counter_y < 235)
                 begin
-                    if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 )
+								|| (counter_x >= 579 && counter_x < 629))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -310,8 +312,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 235 && counter_y < 285)
                 begin
-                    if((counter_x >= 310 && counter_x < 315) || (counter_x >= 365 && counter_x < 370) || (counter_x >=408 && counter_x < 413) || (counter_x >= 463 && counter_x < 468)
-                        || (counter_x >= 506 && counter_x < 511) || (counter_x >= 561 && counter_x < 566))
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536) || (counter_x >= 574 && counter_x < 579) || (counter_x >= 629 && counter_x < 634))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -326,7 +328,7 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 285 && counter_y < 290)
                 begin
-                   if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                   if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ) || (counter_x >= 579 && counter_x < 629 ))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -348,7 +350,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 314 && counter_y < 319)
                 begin
-                     if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                     if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 )
+								|| (counter_x >= 579 && counter_x < 629))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -363,8 +366,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 319 && counter_y < 369)
                 begin
-                    if((counter_x >= 310 && counter_x < 315) || (counter_x >= 365 && counter_x < 370) || (counter_x >=408 && counter_x < 413) || (counter_x >= 463 && counter_x < 468)
-                        || (counter_x >= 506 && counter_x < 511) || (counter_x >= 561 && counter_x < 566))
+                    if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536) || (counter_x >= 574 && counter_x < 579) || (counter_x >= 629 && counter_x < 634))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -379,7 +382,7 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 369 && counter_y < 374)
                 begin
-                    if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ) || (counter_x >= 579 && counter_x < 629 ))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -401,7 +404,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 398 && counter_y < 403)
                 begin
-                     if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                     if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 )
+								|| (counter_x >= 579 && counter_x < 629))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -416,8 +420,8 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 403 && counter_y < 453)
                 begin
-                   if((counter_x >= 310 && counter_x < 315) || (counter_x >= 365 && counter_x < 370) || (counter_x >=408 && counter_x < 413) || (counter_x >= 463 && counter_x < 468)
-                        || (counter_x >= 506 && counter_x < 511) || (counter_x >= 561 && counter_x < 566))
+                   if((counter_x >= 280 && counter_x < 285) || (counter_x >= 335 && counter_x < 340) || (counter_x >=378 && counter_x < 383) || (counter_x >= 433 && counter_x < 438)
+                        || (counter_x >= 476 && counter_x < 481) || (counter_x >= 531 && counter_x < 536) || (counter_x >= 574 && counter_x < 579) || (counter_x >= 629 && counter_x < 634))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
@@ -432,7 +436,7 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                 end
             else if (counter_y >= 453 && counter_y < 458)
                 begin
-                    if ((counter_x >= 315 && counter_x < 365) || (counter_x >= 413 && counter_x <= 463) || (counter_x >= 511 && counter_x < 561 ))
+                    if ((counter_x >= 285 && counter_x < 335) || (counter_x >= 383 && counter_x <= 433) || (counter_x >= 481 && counter_x < 531 ) || (counter_x >= 579 && counter_x < 629 ))
                         begin
                             tmp_r <= 4'hF;    // white(1)
                             tmp_b <= 4'hF;
