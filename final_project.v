@@ -226,12 +226,12 @@ module VGA_display(clk, rst, out_R, out_G, out_B,Hsync,Vsync);
                         end  
                 end 
 						  
-				else 
+				/*else 
 					begin 
 						tmp_r <= 4'h0;    // black
                   tmp_b <= 4'h0;
 						tmp_g <= 4'h0;
-					end
+					end*/
             ////////////////////////////////////////////////////////////////////////////////////// END SECTION 4
             else if (counter_y >= 110 && counter_y < 146)
                 begin
